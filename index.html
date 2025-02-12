@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オセロゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>オセロゲーム</h1>
+    <p>白: <span id="whiteCount">2</span> 黒: <span id="blackCount">2</span></p>
+    <canvas id="gameBoard" width="400" height="400"></canvas>
+    <button id="pvpMode">PVPモード</button>
+    <button id="cpuMode">CPUモード</button>
+    <label for="cpuLevel">CPUレベル:</label>
+    <select id="cpuLevel">
+        <option value="1">Lv1</option>
+        <option value="2">Lv2</option>
+        <option value="3">Lv3</option>
+        <option value="4">Lv4</option>
+        <option value="5">Lv5</option>
+        <option value="6">Lv6</option>
+        <option value="7">Lv7</option>
+        <option value="8">Lv8</option>
+        <option value="9">Lv9</option>
+        <option value="10">Lv10</option>
+    </select>
+    <p id="finalScore" style="display:none;">ゲーム終了！ 白: <span id="finalWhite"></span> 黒: <span id="finalBlack"></span></p>
+    <script src="script.js"></script>
+</body>
+</html>
